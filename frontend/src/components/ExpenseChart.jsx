@@ -9,7 +9,7 @@ const ExpenseChart = () => {
   const [expenses, setExpenses] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/api/expenses/user/1")
+    axios.get("/api/expenses/user/1")
       .then(res => {
         const grouped = groupByCategory(res.data);
         setExpenses(grouped);

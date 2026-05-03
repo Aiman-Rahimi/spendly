@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080/api/expenses';
+const API_BASE_URL = 'https://spendly-production-bfcb.up.railway.app/api/expenses';
 
 export const getExpensesByUser = (userId) => {
     return axios.get(`${API_BASE_URL}/user/${userId}`);
